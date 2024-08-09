@@ -1,4 +1,3 @@
-import { DialogContent } from '@radix-ui/react-dialog'
 import { ArrowRight, Search, X } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
@@ -26,9 +25,7 @@ export function OrderTableRow() {
         dsaf54asd8479864v32
       </TableCell>
       <TableCell className="text-muted-foreground">Há 15 minutos</TableCell>
-      <TableCell>
-        
-      </TableCell>
+      <TableCell></TableCell>
       <TableCell className="font-medium">
         Felipe Frizzo Vilcher Garrido
       </TableCell>
