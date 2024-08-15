@@ -29,14 +29,15 @@ export function OrderTableFilters() {
   const customerName = searchParams.get('customerName')
   const status = searchParams.get('status')
 
-  const { register, handleSubmit, control, reset } = useForm<OrderFiltersSchema>({
-    resolver: zodResolver(orderFiltersSchema),
-    defaultValues: {
-      orderId: orderId ?? '',
-      customerName: customerName ?? '',
-      status: status ?? 'all',
-    },
-  })
+  const { register, handleSubmit, control, reset } =
+    useForm<OrderFiltersSchema>({
+      resolver: zodResolver(orderFiltersSchema),
+      defaultValues: {
+        orderId: orderId ?? '',
+        customerName: customerName ?? '',
+        status: status ?? 'all',
+      },
+    })
 
   function handleFilter({ orderId, customerName, status }: OrderFiltersSchema) {
     setSearchParams((state) => {
