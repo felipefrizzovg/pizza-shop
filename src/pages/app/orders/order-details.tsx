@@ -115,7 +115,9 @@ export function OrderDetails() {
           <TableFooter>
             <TableRow>
               <TableCell colSpan={3}>Total do pedido</TableCell>
-              <TableCell className='text-right font-medium'>R$ 259,60</TableCell>
+              <TableCell className="text-right font-medium">
+                R$ 259,60
+              </TableCell>
             </TableRow>
           </TableFooter>
         </Table>
