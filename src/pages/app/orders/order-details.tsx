@@ -19,6 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+
 import { OrderDetailsSkeleton } from './order-details-skeleton'
 
 export interface OrderDetailProps {
