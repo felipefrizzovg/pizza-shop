@@ -57,7 +57,7 @@ export function OrderDetails({ orderId, open }: OrderDetailProps) {
                 <TableCell className="flex justify-end">
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-muted-foreground">
-                      {order.customer.name}
+                      {order.customer?.name}
                     </span>
                   </div>
                 </TableCell>

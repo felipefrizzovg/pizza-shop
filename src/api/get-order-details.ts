@@ -15,9 +15,9 @@ export interface GetOrderDetailsResponse {
     phone: string | null
   }
   orderItems: {
-    id: true
-    priceInCents: true
-    quantity: true
+    id: string
+    priceInCents: number
+    quantity: number
     product: {
       name: string
     }
